@@ -1,0 +1,9 @@
+services:
+  hello-docker:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: hello-docker:0.0.1
+    container_name: hello-docker
+    ports:
+      - "8080:8080"
